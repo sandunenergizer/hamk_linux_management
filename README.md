@@ -52,4 +52,4 @@ This repository is for tracking the weekly progress of the Linux Management cour
 
 ```cat listing.md```
 
-![List and append](Images/w2_energizer_list_and_append.png)
+![List and append](Images/w2_energizer_list_and_append_01.png)
