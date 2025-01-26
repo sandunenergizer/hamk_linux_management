@@ -20,7 +20,7 @@ This repository is for tracking the weekly progress of the Linux Management cour
   - Network: Created a new resource group and subnet
   - Security: Set up to allow SSH traffic from a specific IP
 
-  ![Azzure VM](images/energizer_vm.png)
+  ![Azzure VM](Images/energizer_vm.png)
 
 ### Establishing SSH Connection with Terminal 
 - **Connecting via SSH:**
@@ -30,7 +30,7 @@ This repository is for tracking the weekly progress of the Linux Management cour
   - Entered the VM's private key link.
   - Successfully connected to the VM with the specified username.
 
-  ![SSH Connection](images/energizer_ssh_connection.png)
+  ![SSH Connection](Images/energizer_ssh_connection.png)
 
 ### Verifying the Connection
 - Logged into the Ubuntu VM shell successfully.
