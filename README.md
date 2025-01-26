@@ -20,7 +20,7 @@ This repository is for tracking the weekly progress of the Linux Management cour
   - Network: Created a new resource group and subnet
   - Security: Set up to allow SSH traffic from a specific IP
 
-  ![Azzure VM](Images/energizer_vm.png)
+  ![Azzure VM](Images/w1_energizer_vm.png)
 
 ### Establishing SSH Connection with Terminal 
 - **Connecting via SSH:**
@@ -30,7 +30,7 @@ This repository is for tracking the weekly progress of the Linux Management cour
   - Entered the VM's private key link.
   - Successfully connected to the VM with the specified username.
 
-  ![SSH Connection](Images/energizer_ssh_connection.png)
+  ![SSH Connection](Images/w1_energizer_ssh_connection.png)
 
 ### Verifying the Connection
 - Logged into the Ubuntu VM shell successfully.
@@ -41,3 +41,15 @@ This repository is for tracking the weekly progress of the Linux Management cour
 - VM created according to the specifications of the Microsoft Azure course.
 - Followed all security best practices.
 - Used SSH key authentication for enhanced security.
+
+## Assignment 2: List and append
+
+- Selected five level 2 directories and save their contents in one file, "listing.md"
+
+```sudo ls /etc/{security,selinux,systemd,sos,ssh} > listing.md```
+
+- Listed the files
+
+```cat listing.md```
+
+![List and append](Images/w2_energizer_list_and_append.png)
