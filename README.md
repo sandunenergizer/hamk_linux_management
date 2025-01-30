@@ -53,3 +53,22 @@ This repository is for tracking the weekly progress of the Linux Management cour
 ```cat listing.md```
 
 ![List and append](Images/w2_energizer_list_and_append_01.png)
+
+## Assignment 3: User management and file system access
+
+![List and append](Images/w3_1.png)
+
+![List and append](Images/w3_2.png)
+
+![List and append](Images/w3_3.png)
+
+![List and append](Images/w3_4.png)
+
+![List and append](Images/w3_5.png)
+
+![List and append](Images/w3_6.png)
+
+![List and append](Images/w3_7.png)
+
+![List and append](Images/w3_8.png)
+
