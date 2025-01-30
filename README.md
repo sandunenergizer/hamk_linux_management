@@ -56,19 +56,45 @@ This repository is for tracking the weekly progress of the Linux Management cour
 
 ## Assignment 3: User management and file system access
 
-![List and append](Images/w3_1.png)
+1. Created the Tupu user using the adduser script:
 
-![List and append](Images/w3_2.png)
+```sudo adduser tupu```
 
-![List and append](Images/w3_3.png)
+![Create user tupu](Images/w3_1.png)
 
-![List and append](Images/w3_4.png)
+2. Created the Lupu user using the useradd command. Try to create a user profile, home directory, and user group similar to Tupu.
 
-![List and append](Images/w3_5.png)
+```sudo useradd -m -d /home/lupu -s /bin/bash -U lupu lupu```
 
-![List and append](Images/w3_6.png)
+![Create user lupu](Images/w3_2.png)
+![Adding to user group](Images/w3_3.png)
 
-![List and append](Images/w3_7.png)
+3. Created the Hupu system user with the login shell set to /bin/false
+```sudo useradd --system --shell /bin/false hupu```
 
-![List and append](Images/w3_8.png)
+![Create user hupu](Images/w3_4.png)
+
+4. Add the users Tupu and Lupu to the sudo users
+```sudo visudo```
+
+and added the folllowing lines
+
+```tupu ALL=(ALL:ALL) ALL```
+```lupu ALL=(ALL:ALL) ALL```
+
+![Add users to sudo users](Images/w3_5.png)
+
+And added users to the sudo group with following code:
+```sudo usermod -aG sudo tupu``` 
+```sudo usermod -aG sudo lupu``` 
+
+![Add users to sudo group](Images/w3_6.png)
+
+5. Created a directory /opt/projekti and add both users (Tupu and Lupu) as owners. Only Tupu and Lupu should have access to list files in the directory, read, and modify them.
+
+![Added to directory](Images/w3_7.png)
+
+6. Verified the process
+
+![Verifying process](Images/w3_8.png)
 
