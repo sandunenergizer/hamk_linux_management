@@ -70,11 +70,13 @@ This repository is for tracking the weekly progress of the Linux Management cour
 ![Adding to user group](Images/w3_3.png)
 
 3. Created the Hupu system user with the login shell set to /bin/false
+
 ```sudo useradd --system --shell /bin/false hupu```
 
 ![Create user hupu](Images/w3_4.png)
 
 4. Add the users Tupu and Lupu to the sudo users
+
 ```sudo visudo```
 
 and added the folllowing lines
@@ -85,8 +87,9 @@ and added the folllowing lines
 ![Add users to sudo users](Images/w3_5.png)
 
 And added users to the sudo group with following code:
-```sudo usermod -aG sudo tupu``` 
-```sudo usermod -aG sudo lupu``` 
+
+```sudo usermod -aG sudo tupu```
+```sudo usermod -aG sudo lupu```
 
 ![Add users to sudo group](Images/w3_6.png)
 
