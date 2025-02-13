@@ -101,3 +101,214 @@ And added users to the sudo group with following code:
 
 ![Verifying process](Images/w3_8.png)
 
+
+# Assignment 6: APT Usage Exploration on Linux
+
+## Introduction
+This report details practical work with the Advanced Package Tool (APT) on a Linux system, including system updates, package handling, repository management, and troubleshooting strategies.
+
+---
+
+## Part 1: APT Basics & System Updates
+
+### Checking APT Version
+**Command used:**
+```bash
+apt --version
+```
+![APT Version](Images/w6_1.png)
+
+### Updating Package Lists
+**Command used:**
+```bash
+sudo apt update
+```
+**Significance:**
+- Syncs local package lists with remote repositories.
+- Ensures the system has updated details on available software.
+- Necessary before installing or upgrading packages.
+- Identifies which packages require updates.
+
+![APT Update](Images/w6_2.png)
+
+### Upgrading Installed Packages
+**Command used:**
+```bash
+sudo apt upgrade -y
+```
+**Key Differences Between Update and Upgrade:**
+- `apt update` refreshes package metadata.
+- `apt upgrade` downloads and installs newer versions of installed packages.
+- `update` is like checking for updates, whereas `upgrade` applies them.
+
+![APT Upgrade](Images/w6_3.png)
+
+### Checking for Pending Updates
+**Command used:**
+```bash
+apt list --upgradable
+```
+ This command lists upgradeble files
+
+---
+
+## Part 2: Installing & Managing Software
+
+### Searching for a Package
+**Command used:**
+```bash
+apt search image editor
+```
+**Selected Package:** GIMP (GNU Image Manipulation Program)
+
+### Viewing Package Details
+**Command used:**
+```bash
+apt show gimp
+```
+![Show GIMP](Images/w6_4.png)
+
+**Dependencies:**
+- `libc6`
+- `libgdk-pixbuf2.0-0`
+- `libgegl-0.4-0t64`
+- `libgimp2.0t64`
+- `libgtk2.0-0t64`
+
+### Installing a Package
+**Command used:**
+```bash
+sudo apt install gimp -y
+```
+**Verification:** Installation was successful, and the application was launched to confirm functionality.
+
+### Checking Installed Version
+**Command used:**
+```bash
+apt list --installed | grep gimp
+```
+
+![gimp installed version](Images/w6_5.png)
+
+---
+
+## Part 3: Uninstalling & Cleaning Packages
+
+### Removing a Package
+**Command used:**
+```bash
+sudo apt remove gimp -y
+```
+**Note:** Removes the software but retains configuration files.
+
+### Completely Purging a Package
+**Command used:**
+```bash
+sudo apt purge gimp -y
+```
+**Key Differences Between Remove and Purge:**
+- `remove` uninstalls the application while keeping settings.
+- `purge` deletes both the application and its configuration files.
+- `purge` is ideal for completely removing all package traces.
+
+### Removing Unused Dependencies
+**Command used:**
+```bash
+sudo apt autoremove -y
+```
+**Significance:**
+- Deletes packages no longer required by other applications.
+- Frees up storage space.
+- Helps keep the system clean.
+
+### Clearing the Package Cache
+**Command used:**
+```bash
+sudo apt clean
+```
+**Purpose:**
+- Erases downloaded `.deb` files from the local cache.
+- Frees space in `/var/cache/apt/archives/`.
+- Does not affect installed programs.
+
+---
+
+## Part 4: Repository Management & Troubleshooting
+
+### Viewing Repository Sources
+**Command used:**
+```bash
+cat /etc/apt/sources.list
+```
+![APT repository sources](Images/w6_6.png)
+
+**Observations:**
+- Includes core Ubuntu repositories.
+- Contains components: main, restricted, universe, multiverse.
+- Lists both source and binary repositories.
+- Includes security update repositories.
+
+### Enabling the Universe Repository
+**Command used:**
+```bash
+sudo add-apt-repository universe
+sudo apt update
+```
+**Result:**
+```
+Command output
+```
+**Universe Repository Offers:**
+- Community-maintained software.
+- Open-source applications not officially supported by Ubuntu.
+- A broader selection of packages than the main repository.
+- More frequent updates.
+
+### Simulating an Installation Failure
+**Command used:**
+```bash
+sudo apt install fakepackage
+```
+**Error Message:**
+```
+Command output
+```
+**Troubleshooting Steps:**
+- Verify the package name is correct.
+- Check if the repository containing the package is enabled.
+- Run `apt update` to refresh package indexes.
+- Use `apt search` to find similar packages.
+- Look for alternative package sources if necessary.
+
+---
+
+## Bonus: Holding & Releasing Packages
+
+### Preventing Automatic Updates
+**Commands used:**
+```bash
+sudo apt-mark hold firefox
+sudo apt-mark unhold firefox
+```
+**Result:**
+```
+Command output
+```
+**Reasons for Holding a Package:**
+- Prevents automatic updates of essential software.
+- Ensures compatibility with other installed programs.
+- Avoids potential issues caused by new updates.
+- Maintains a stable working environment.
+
+---
+
+## Conclusion
+This assignment provided hands-on experience with APT package management, covering:
+- Updating and upgrading the system.
+- Installing and removing software.
+- Managing repositories.
+- Troubleshooting package issues.
+- Using advanced package management techniques.
+
+These skills are essential for effectively managing and maintaining Linux-based systems.
+```
