@@ -254,10 +254,8 @@ cat /etc/apt/sources.list
 sudo add-apt-repository universe
 sudo apt update
 ```
-**Result:**
-```
-Command output
-```
+![APT Version](Images/w6_7.png)
+
 **Universe Repository Offers:**
 - Community-maintained software.
 - Open-source applications not officially supported by Ubuntu.
@@ -270,9 +268,8 @@ Command output
 sudo apt install fakepackage
 ```
 **Error Message:**
-```
-Command output
-```
+![APT Version](Images/w6_8.png)
+
 **Troubleshooting Steps:**
 - Verify the package name is correct.
 - Check if the repository containing the package is enabled.
@@ -290,10 +287,8 @@ Command output
 sudo apt-mark hold firefox
 sudo apt-mark unhold firefox
 ```
-**Result:**
-```
-Command output
-```
+![APT Version](Images/w6_9.png)
+
 **Reasons for Holding a Package:**
 - Prevents automatic updates of essential software.
 - Ensures compatibility with other installed programs.
