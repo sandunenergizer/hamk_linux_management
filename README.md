@@ -101,6 +101,11 @@ And added users to the sudo group with following code:
 
 ![Verifying process](Images/w3_8.png)
 
+## Assignment 5: 
+![Verifying process](Images/W5_1.jpg)
+![Verifying process](Images/W5_2.jpg)
+![Verifying process](Images/W5_3_crontab.jpg)
+![Verifying process](Images/W5_4_awk.jpg)
 
 # Assignment 6: APT Usage Exploration on Linux
 
@@ -306,4 +311,28 @@ This assignment provided hands-on experience with APT package management, coveri
 - Using advanced package management techniques.
 
 These skills are essential for effectively managing and maintaining Linux-based systems.
-```
+# Assignment 7: 
+
+![Verifying process](Images/W7_1.png)
+![Verifying process](Images/W7_2.png)
+![Verifying process](Images/W7_3.png)
+![Verifying process](Images/W7_4.png)
+![Verifying process](Images/W7_5.png)
+![Verifying process](Images/W7_6.png)
+![Verifying process](Images/W7_7.png)
+![Verifying process](Images/W7_8.png)
+![Verifying process](Images/W7_9.png)
+![Verifying process](Images/W7_10.png)
+![Verifying process](Images/W7_11.png)
+
+# Assignment 8: 
+![Verifying process](Images/W8_1.png)
+![Verifying process](Images/W8_2.png)
+![Verifying process](Images/W8_3.png)
+![Verifying process](Images/W8_4.png)
+![Verifying process](Images/W8_5.png)
+![Verifying process](Images/W8_6.png)
+![Verifying process](Images/W8_7.png)
+![Verifying process](Images/W8_8.png)
+![Verifying process](Images/W8_9.png)
+![Verifying process](Images/W8_10.png)
